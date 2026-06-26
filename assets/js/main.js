@@ -44,9 +44,9 @@ updateFloating();
 
 // ── LIVE STATUS ────────────────────────────────────────────
 const SCHED = [
-  [[8*60,21*60]], [[8*60,19*60]], [[8*60,21*60]],
-  [[8*60,19*60]], [[8*60,21*60]], [[10*60,12*60]],
-  []
+  [[6*60,23*60]], [[6*60,23*60]], [[6*60,23*60]],
+  [[6*60,23*60]], [[6*60,23*60]], [[9*60,18*60]],
+  [[9*60,18*60]]
 ];
 const hhmm = m => String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
 
@@ -91,11 +91,11 @@ function galScroll(dir) {
 
 // ── REVIEWS ────────────────────────────────────────────────
 const REVIEWS = [
-  { name: 'Franco', text: 'Box grandissimo, attrezzato e pulito. Organizzazione ai massimi livelli. La cortesia, la simpatia e soprattutto la professionalità, da parte di Salvatore e Stefania, hanno dato modo di creare un ambiente non solo dove "sudare", ma soprattutto un luogo di grande aggregazione.' },
-  { name: 'Salvatore', text: 'Ambiente e coach super motivante! Ogni volta impari qualcosa e migliori rispetto alla volta precedente! Stefania sempre pronta ad accoglierti con un gran sorriso' },
-  { name: 'Eugenio', text: 'Salvatore è una persona disponibile e qualificata. La struttura è grande e attrezzata nei minimi particolari per accontentare qualsiasi tipo di clientela.' },
-  { name: 'Maria', text: 'Ambiente familiare dove fare squadra è il must della palestra, con focus però sul proprio allenamento ed i propri obiettivi. Struttura spaziosa, in centro, ma fuori dal caos cittadino.' },
-  { name: 'Mattia', text: 'Palestra super attrezzata che la contraddistingue per professionalità, disponibilità e gentilezza. Consigliatissima.' },
+  { name: 'Mohamed', text: 'Miglior palestra di Modena e dintorni a mani basse. Se fai bodybuilding seriamente questa palestra ti rivoluziona l\'allenamento.' },
+  { name: 'Olimpia', text: 'Palestra eccezionale, all\'avanguardia con la migliore attrezzatura disponibile sul mercato mondiale. Ogni volta che mi alleno qui mi sento a casa!' },
+  { name: 'Mattia', text: 'La palestra più attrezzata di Modena! Dove si respira BODYBUILDING!' },
+  { name: 'Simone', text: 'Palestra dove si respira il vero bodybuilding, ambiente super motivante. Dani, Cris e Matte sempre disponibili.' },
+  { name: 'Giacomo', text: 'Chi ama il bodybuilding sa che questa palestra è il top. Troverete non solo i migliori e più rari macchinari al mondo, ma anche un ambiente che permette di allenarsi seriamente.' },
 ];
 let rIdx = 0, rTimer;
 
